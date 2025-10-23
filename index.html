@@ -1,84 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cooper's Homepage</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cooper Berger</title>
   <style>
-    /* ---------- Base Styles ---------- */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 
     body {
-      font-family: "Poppins", Arial, sans-serif;
-      background: linear-gradient(135deg, #6a11cb, #b5179e);
-      color: #222;
-      line-height: 1.6;
-      min-height: 100vh;
-    }
-
-    header {
-      text-align: center;
-      padding: 60px 20px 40px;
-      color: white;
-      background: linear-gradient(135deg, #5e17eb, #8a2be2);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    header h1 {
-      font-size: 2.8em;
-      letter-spacing: 1px;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.2em;
-      opacity: 0.9;
-    }
-
-    /* ---------- Main Layout ---------- */
-    main {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 20px;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #2b5876);
+      color: #fff;
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 40px 20px;
     }
 
-    section {
-      background-color: #fff;
-      border-radius: 12px;
-      padding: 25px 30px;
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    section:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
     }
 
     h2 {
-      color: #5e17eb;
-      margin-bottom: 10px;
-      border-bottom: 2px solid #d1b3ff;
-      padding-bottom: 5px;
+      color: #b0c4de;
+      margin-top: 0;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 600px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 10px 0;
+      font-size: 1.1em;
+    }
+
+    .hobbies span {
+      background: #ff7b00;
+      color: white;
+      padding: 8px 12px;
+      margin: 5px;
+      border-radius: 20px;
       display: inline-block;
+      font-size: 0.95em;
+      transition: transform 0.2s;
     }
 
-    p, ul, ol {
-      margin-top: 10px;
-      font-size: 1.05em;
+    .hobbies span:hover {
+      transform: scale(1.1);
+      background: #ffa733;
     }
 
-    ul, ol {
-      margin-left: 25px;
+    footer {
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #aaa;
     }
+  </style>
+</head>
+<body>
+  <h1>Cooper Berger</h1>
+  <h2>Baseball Player • Saint Mary's College</h2>
 
-    a {
-      color: #8a2be2;
-      text-decoration: none;
+  <div class="card">
+    <ul>
+      <li><strong>Age:</strong> 19</li>
+      <li><strong>From:</strong> Newport Beach, CA</li>
+      <li><strong>Siblings:</strong> 2</li>
+      <li><strong>Countries Visited:</strong> 8</li>
+    </ul>
+
+    <h3>Things I Like To Do</h3>
+    <div class="hobbies">
+      <span>🏋️ Go to the Gym</span>
+      <span>🥾 Hike</span>
+      <span>🎣 Fish</span>
+      <span>🎶 Go to Concerts</span>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Cooper Berger
+  </footer>
+</body>
+</html>
