@@ -1,69 +1,159 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-</head>
-<body>
-This is my webpage.
-</body>!DOCTYPE html>
-<head>
-  <Title>Cooper's homepage</Title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cooper's Homepage</title>
   <style>
-  table, th, td {
-    border: 1px solid black;
-  }
-    body{background-color}=blue
-  </style> 
+    body {
+      background-color: #e6f0ff;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    h1, h2 {
+      color: #003366;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    ul, ol {
+      margin-left: 30px;
+    }
+
+    a {
+      color: #003366;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    iframe {
+      display: block;
+      margin: 20px auto;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      iframe {
+        width: 100%;
+        height: 250px;
+      }
+    }
+  </style>
 </head>
 <body>
-<h1>Welcome to my webpage!</h1>
-  <h2>Something about me</h2>
-  <p>Hi, I am Cooper. I am a baseball player at Saint Mary's College in Moraga, CA.</p>
-  <br/>
-  <h2>Hobbies:</h2>
-  Some of my hobbies are:
-  <ul>
-    <li>Going to the gym</li>
-    <li>Watching movies</li>
-    <li>Playing sports</li>
-    <li>Going to concerts</li>
-    <li>Hiking</li>
-    
-    <li>Fishing</li>
-  </ul>
-  
-  <h2>Classes that I am taking in Fall 2025</h2>
-  <ol>
-    <li>Accounting</li>
-    <li>Statistics</li>
-    <li>Writing and Research 201</li>
-  </ol>
 
-  <h2>My background</h2>
-  <ul>
-    <li>From Newport Beach, CA</li>
-    <li>19 years old</li>
-    <li>I have 2 siblings: and older brother and older sister </li>
-  </ul>
+  <header>
+    <h1>Welcome to Cooper's Homepage</h1>
+  </header>
 
-  <h2>Places I have been</h2>
-  <ul>
-    <li>US: California, Arizona, Washington, Montana, Wyoming, Utah, Texas, Florida, New York, Wisconson, North Carolina, Tennessee</li>
-    <li>Mexico</li>
-    <li>Costa Rica</li>
-    <li>Japan</li>
-    <li>Bahamas</li>
-    <li>Canada</li>
-    <li>Portugal</li>
-    <li>Spain</li>
-    <li>France</li>
-    <li>Sweden</li>
-  </ul>
-  <a href="sched.h
-  tml">Look at my class schedule here.</a>
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>Hi, I’m <strong>Cooper</strong>. I am a baseball player at Saint Mary’s College in Moraga, CA.</p>
+    </section>
 
-  <h1>My campus:</h1>
-  <iframe width="555" height="312" src="https://www.youtube.com/embed/Vk8xCKMvZik" title="Inspire. Engage. Transform. We are Gaels." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <section>
+      <h2>My Hobbies</h2>
+      <ul>
+        <li>Going to the gym</li>
+        <li>Watching movies</li>
+        <li>Playing sports</li>
+        <li>Going to concerts</li>
+        <li>Hiking</li>
+        <li>Fishing</li>
+      </ul>
+    </section>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.829042964388!2d-122.11151768791343!3d37.84088790823096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f884cd1042763%3A0xf4af4d5ec8f1ac3d!2sSaint%20Mary&#39;s%20College%20of%20California!5e0!3m2!1sen!2sus!4v1759863744856!5m2!1sen!2sus" width="600" height="312" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section>
+      <h2>Classes I’m Taking (Fall 2025)</h2>
+      <ol>
+        <li>Accounting</li>
+        <li>Statistics</li>
+        <li>Writing and Research 201</li>
+      </ol>
+      <p><a href="sched.html">View my class schedule here →</a></p>
+    </section>
 
-  
+    <section>
+      <h2>My Background</h2>
+      <ul>
+        <li>From Newport Beach, CA</li>
+        <li>19 years old</li>
+        <li>I have 2 siblings: an older brother and an older sister</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Places I’ve Been</h2>
+      <ul>
+        <li>US: California, Arizona, Washington, Montana, Wyoming, Utah, Texas, Florida, New York, Wisconsin, North Carolina, Tennessee</li>
+        <li>Mexico</li>
+        <li>Costa Rica</li>
+        <li>Japan</li>
+        <li>Bahamas</li>
+        <li>Canada</li>
+        <li>Portugal</li>
+        <li>Spain</li>
+        <li>France</li>
+        <li>Sweden</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>My Campus</h2>
+      <iframe width="555" height="312"
+        src="https://www.youtube.com/embed/Vk8xCKMvZik"
+        title="Inspire. Engage. Transform. We are Gaels."
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.829042964388!2d-122.11151768791343!3d37.84088790823096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f884cd1042763%3A0xf4af4d5ec8f1ac3d!2sSaint%20Mary&#39;s%20College%20of%20California!5e0!3m2!1sen!2sus!4v1759863744856!5m2!1sen!2sus"
+        width="600"
+        height="312"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Cooper | Made with ❤️ for Saint Mary’s College</p>
+  </footer>
+
 </body>
+</html>
